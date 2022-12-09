@@ -1,0 +1,9 @@
+.miInput {
+  background-color: black;
+  color: white;
+  border-radius: 25px;
+  border: 2px solid white;
+  width: auto;
+  height: 80px;
+  margin-bottom: 20px;
+}

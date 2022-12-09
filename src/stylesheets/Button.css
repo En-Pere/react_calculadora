@@ -1,0 +1,25 @@
+.button {
+  height: 60px;
+  display: flex;
+  flex-direction: row;
+  flex: 1 1;
+  justify-content: center;
+  align-items: center;
+  font-weight: bold;
+  font-size: 38px;
+  background-color: black;
+  color: white;
+  border-radius: 25px;
+  border: 2px solid white;
+  margin: 5px;
+  cursor: pointer;
+}
+
+.button:hover,
+.button.operator:hover {
+  background-color: grey;
+}
+
+.button.operator {
+  background-color: green;
+}
