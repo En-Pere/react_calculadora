@@ -9,6 +9,7 @@ function Button(props) {
   return (
     <div
       className={`button ${isOperator(props.children) ? "operator" : "num"}`}
+      onClick={() => props.manejarclick(props.children)}
     >
       {props.children}
     </div>

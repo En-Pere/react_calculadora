@@ -1,8 +1,8 @@
 import React from "react";
 import "../stylesheets/TextoInput.css";
 
-function TextoInput({ param }) {
-  return <div className="miInput">{param}</div>;
+function TextoInput({ input }) {
+  return <div className="miInput">{input}</div>;
 }
 
 export default TextoInput;

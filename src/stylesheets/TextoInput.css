@@ -6,4 +6,9 @@
   width: auto;
   height: 80px;
   margin-bottom: 20px;
+  display: flex;
+  justify-content: right;
+  align-items: center;
+  padding-right: 10px;
+  font-size: 25px;
 }

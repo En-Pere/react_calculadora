@@ -1,4 +1,5 @@
-.button {
+.button,
+.button_clear {
   height: 60px;
   display: flex;
   flex-direction: row;
