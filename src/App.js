@@ -3,12 +3,21 @@ import Button from "../src/components/Button";
 import TextoInput from "../src/components/TextoInput";
 import ButtonClear from "../src/components/ButtonClear";
 import { useState } from "react";
+import { evaluate } from "mathjs";
 
 function App() {
   const [input, setInput] = useState("");
 
   const addInput = (val) => {
     setInput(input + val);
+  };
+
+  const clearInput = () => {
+    setInput("");
+  };
+
+  const resultadoTotal = () => {
+    setInput(evaluate(input));
   };
 
   return (
@@ -34,13 +43,13 @@ function App() {
           <Button manejarclick={addInput}>*</Button>
         </div>
         <div className="row">
-          <Button manejarclick={addInput}>=</Button>
+          <Button manejarclick={resultadoTotal}>=</Button>
           <Button manejarclick={addInput}>0</Button>
           <Button manejarclick={addInput}>.</Button>
           <Button manejarclick={addInput}>/</Button>
         </div>
         <div className="row">
-          <ButtonClear>Clear</ButtonClear>
+          <ButtonClear manejarClear={clearInput}>Clear</ButtonClear>
         </div>
       </div>
     </div>
